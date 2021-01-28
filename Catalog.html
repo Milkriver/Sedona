@@ -16,7 +16,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="Catalog.html">Гостиницы</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -29,16 +29,16 @@
           <legend>Инфраструктура:</legend>
           <ul>
             <li>
-              <input type="checkbox" name="Бассейн" id="filter-swimmingpool" checked>
+              <input type="checkbox" name="swimmingpool" id="filter-swimmingpool" checked>
               <label for="filter-swimmingpool">Бассейн</label>
             </li>
             <li>
-              <input type="checkbox" name="Парковка" id="filter-parking">
+              <input type="checkbox" name="parking" id="filter-parking">
               <label for="filter-parking">Парковка</label>
             </li>
             <li>
-              <input type="checkbox" name="Wi-fi" id="filter-Wi-fi">
-              <label for="Wi-fi">Wi-fi</label>
+              <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+              <label for="filter-wi-fi">Wi-fi</label>
             </li>
             <ul>
         </fieldset>
@@ -46,25 +46,33 @@
           <legend>Тип жилья:</legend>
           <ul>
             <li>
-              <input type="checkbox" name="Гостиница" id="filter-hotel" checked>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
             </li>
             <li>
-              <input type="checkbox" name="Мотель" id="filter-motel" checked>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
               <label for="filter-motel">Мотель</label>
             </li>
             <li>
-              <input type="checkbox" name="Апартаменты" id="filter-apartments" checked>
+              <input type="checkbox" name="apartments" id="filter-apartments" checked>
               <label for="filter-apartments">Апартаменты</label>
             </li>
             <ul>
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <input type="number" min="0" name="От 0" id="price" placeholder="От 0">
-          <input type="number" max="3000" name="До 3000" id="price" placeholder="До 3000">
-          <input type="range" min="0" max="3000">
-        </fieldset>
+          <input type="number" min="0" name="minprice" id="minprice" placeholder="От 0">
+          <label for="minprice"></label>
+          <input type="number" max="3000" name="maxprice" id="maxprice" placeholder="До 3000">
+          <label for="maxprice"></label>
+          <div>
+           <button class="button_min">min</button>
+           <button class="button_max">max</button>
+           <div style="width:300px;
+           border-top:5px solid #808080;
+           border-bottom: 3px #808080">
+          </div>
+           </fieldset>
 
         <button type="submit">Показать</button>
       </form>
@@ -84,6 +92,8 @@
           <input type="radio" id="sortbyrating" name="sortby" value="Rating">
           <label for="sortbyrating">По рейтингу</label>
         </div>
+        <img src="https://via.placeholder.com/11x10" alt="sorting">
+        <img src="https://via.placeholder.com/11x10" alt="sorting">
       </form>
 
       <ul>
@@ -104,9 +114,9 @@
           <img src="https://via.placeholder.com/19x17" alt="Rating">
           <img src="https://via.placeholder.com/19x17" alt="Rating">
           <img src="https://via.placeholder.com/19x17" alt="Rating">
-          <img src="https://via.placeholder.com/19x17" alt="Rating"><br>
-          <button type="button">Подробнее</button>
-          <button type="button">Забронировать</button>
+          <img src="https://via.placeholder.com/19x17" alt="Rating">
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
         </li>
         <li>
           <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
@@ -124,9 +134,9 @@
           </p>
           <img src="https://via.placeholder.com/19x17" alt="Rating">
           <img src="https://via.placeholder.com/19x17" alt="Rating">
-          <img src="https://via.placeholder.com/19x17" alt="Rating"><br>
-          <button type="button">Подробнее</button>
-          <button type="button">Забронировать</button>
+          <img src="https://via.placeholder.com/19x17" alt="Rating">
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
         </li>
         <li>
           <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
@@ -143,9 +153,10 @@
             Рейтинг 9,2
           </p>
           <img src="https://via.placeholder.com/19x17" alt="Rating">
-          <img src="https://via.placeholder.com/19x17" alt="Rating"><br>
-          <button type="button">Подробнее</button>
-          <button type="button">Забронировать</button>
+          <img src="https://via.placeholder.com/19x17" alt="Rating">
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+
         </li>
       </ul>
     </section>
@@ -154,7 +165,9 @@
     <section>
       <h2>Как с нами связаться</h2>
       <p>
-        #VISITSEDONA<br>
+        #VISITSEDONA
+      </p>
+      <p>
         Телефон: <a href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </section>
@@ -174,7 +187,7 @@
     </section>
     <p>
       Website by:
-      <a href="https://htmlacademy.ru">HTML Academy</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     </p>
   </footer>
 </body>

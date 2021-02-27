@@ -538,19 +538,63 @@ button:active * {
   margin-top: 0;
 }
 
-.sorting-types{
+.sorting-types-block {
   display: flex;
-  
-  width: 100%;
-  margin: 0;
   padding-top: 31px;
+  margin-top: 0;
 }
 
-.sorting-types-header{
+.sorting-types-header {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  color:var(--basic-black); 
+  color: var(--basic-black);
   margin: 0;
 }
+
+.sorting-types {
+  width: auto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  background-color: transparent;
+  height: 18px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--basic-neutral);
+}
+
+.sorting-types-selected {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-neutral);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.sorting-direction-button{
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  padding: 0;
+}
+
+.sorting-direction {
+  width: 11px;
+  height: 10px;
+  }
+
+  .sorting-direction-inverted {
+    transform: rotate(180deg);
+  }
+
+  .searching-results{
+    
+  }

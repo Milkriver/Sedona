@@ -46,13 +46,13 @@ fieldset {
 }
 
 .visually-hidden {
-	position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 
@@ -61,8 +61,6 @@ fieldset {
 }
 
 button {
-  width: 458px;
-  height: 58px;
   background: var(--basic-neutral);
   border: var(--basic-neutral);
   color: var(--basic-white);
@@ -87,8 +85,6 @@ button:active * {
 }
 
 .button {
-  width: 458px;
-  height: 58px;
   background: var(--basic-neutral);
   border: var(--basic-neutral);
   color: var(--basic-white);
@@ -125,6 +121,7 @@ button:active * {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
   text-align: center;
   width: 138px;
   height: 70px;
@@ -137,6 +134,7 @@ button:active * {
 
 .site-navigation a {
   color: var(--basic-black);
+  text-decoration: none;
 }
 
 .site-navigation a:hover {
@@ -148,7 +146,7 @@ button:active * {
   opacity: 0.3;
 }
 
-.site-navigation-current a{
+.site-navigation-current a {
   color: var(--basic-dark);
 }
 
@@ -156,6 +154,7 @@ button:active * {
 .welcome-card {
   position: relative;
   height: 509px;
+  background-image: url("/img/index_background_photo.jpg");
 }
 
 .welcome-card:after {
@@ -163,10 +162,10 @@ button:active * {
   display: block;
   width: 100%;
   height: 57px;
-  background: url("./img/welcome-figure.svg");
+  background: url("/img/welcome-figure.svg");
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
 }
 
 .welcome-description {
@@ -227,6 +226,9 @@ button:active * {
   font-weight: normal;
   line-height: 21px;
   text-align: center;
+  padding: 23px 51px 54px;
+  padding-left: 51px;
+  padding-right: 51px;
 }
 
 .feature-illustration {
@@ -244,12 +246,32 @@ button:active * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  position: relative;
+}
+
+.feature-recommend-item-name {
+  padding-top: 160px;
+}
+
+.feature-icon-home {
+  background-image: url("/img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position: center 20%;
+}
+
+.feature-icon-food {
+  background-image: url("/img/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: center 20%;
+}
+
+.feature-icon-gifts {
+  background-image: url("/img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center 20%;
 }
 
 .feature-icon img {
-  width: 75px;
-  height: 70px;
   object-fit: contain;
 }
 
@@ -307,6 +329,7 @@ button:active * {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .modal-button:hover {
@@ -324,14 +347,35 @@ button:active * {
 .modal-appointment-form {
   width: 568px;
   position: absolute;
-  left: 0;
-  background-color: var(--basic-white);
-  padding: 55px;
+   background-color: var(--basic-white);
   box-sizing: border-box;
+}
+
+.modal-appointment-form-parametrs{
+padding: 60px 55px;
 }
 
 .modal-appointment-item {
   font-weight: bold;
+  position: relative;
+  align-items: center;
+  padding-bottom: 41px;
+}
+
+.modal-appointment-item-date{
+background-color: var(--basic-light-dark);
+color: var(--basic-black);
+font-weight: bold;
+padding: 6px 210px 6px 12px;
+border: none;
+}
+
+.modal-submit-button{
+  padding: 16px 180px;
+  position: absolute;
+  align-items: center;
+  margin: 0 55px 55px;
+  
 }
 
 /* Footer */
@@ -355,6 +399,7 @@ button:active * {
 
 .footer-phone {
   color: #000000;
+  text-decoration: none;
 }
 
 .footer-hashtag {
@@ -379,6 +424,24 @@ button:active * {
   align-items: center;
   width: 46px;
   height: 48px;
+}
+
+.social-button-twitter {
+  background-image: url(/img/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button-facebook {
+  background-image: url(/img/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button-youtube {
+  background-image: url(/img/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-button:hover {
@@ -600,9 +663,9 @@ button:active * {
   opacity: 1;
 }
 
-.sorting-direction-wrapper{
+.sorting-direction-wrapper {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 
 .sorting-direction-button {
@@ -615,8 +678,8 @@ button:active * {
 .sorting-direction {
   width: 11px;
   height: 10px;
- fill: var(--basic-neutral);
- padding-left: 6px;
+  fill: var(--basic-neutral);
+  padding-left: 6px;
 }
 
 .sorting-direction-inverted {
@@ -694,6 +757,7 @@ button:active * {
   text-transform: uppercase;
   color: var(--basic-white);
   padding: 0 19px;
+  text-decoration: none;
 }
 
 .button-searching-booking {

@@ -347,12 +347,12 @@ button:active * {
 .modal-appointment-form {
   width: 568px;
   position: absolute;
-   background-color: var(--basic-white);
+  background-color: var(--basic-white);
   box-sizing: border-box;
 }
 
-.modal-appointment-form-parametrs{
-padding: 60px 55px;
+.modal-appointment-form-parametrs {
+  padding: 60px 55px;
 }
 
 .modal-appointment-item {
@@ -362,20 +362,20 @@ padding: 60px 55px;
   padding-bottom: 41px;
 }
 
-.modal-appointment-item-date{
-background-color: var(--basic-light-dark);
-color: var(--basic-black);
-font-weight: bold;
-padding: 6px 210px 6px 12px;
-border: none;
+.modal-appointment-item-date {
+  background-color: var(--basic-light-dark);
+  color: var(--basic-black);
+  font-weight: bold;
+  padding: 6px 210px 6px 12px;
+  border: none;
 }
 
-.modal-submit-button{
+.modal-submit-button {
   padding: 16px 180px;
   position: absolute;
   align-items: center;
   margin: 0 55px 55px;
-  }
+}
 
 /* Footer */
 .main-footer {
@@ -450,12 +450,6 @@ border: none;
 .social-button:focus {
   background-color: var(--basic-neutral-active);
   opacity: 0.3;
-}
-
-.social-button-img {
-  height: 22px;
-  width: 22px;
-  object-fit: contain;
 }
 
 .footer-copyright-website {
@@ -577,8 +571,7 @@ border: none;
 }
 
 .filter-button {
-  width: 137px;
-  height: 36px;
+  padding: 7px 35px;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;

@@ -26,17 +26,12 @@ body {
   background-color: var(--basic-light-dark);
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
   margin: 0;
 }
@@ -104,7 +99,6 @@ button:active * {
   text-transform: uppercase;
 }
 
-
 .page-body {
   width: 1200px;
   background: var(--basic-white);
@@ -129,10 +123,8 @@ button:active * {
 
 .main-header-logo {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   width: 138px;
   height: 70px;
@@ -164,7 +156,6 @@ button:active * {
 .welcome-card {
   position: relative;
   height: 509px;
-
 }
 
 .welcome-card:after {
@@ -427,6 +418,7 @@ button:active * {
   fill: var(--basic-light-active);
 }
 
+/* Catalog */
 .filter {
   background-image: url("../img/filter_background.jpg");
   width: 100%;

@@ -105,16 +105,14 @@ button:active * {
 .main-navigation {
   font-weight: bold;
   position: relative;
-  height: inherit;
+
 }
 
 .site-navigation {
   list-style: none;
-  display: flex;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  height: inherit;
+  display: flex;
+  padding: 15px 72px;
 }
 
 .main-header-logo {
@@ -131,6 +129,15 @@ button:active * {
   width: 138px;
   height: 70px;
 }
+
+.site-navigation li {
+  width: 20%;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 20%;
+}
+
 
 .site-navigation a {
   color: var(--basic-black);
@@ -373,8 +380,8 @@ button:active * {
 
 .modal-submit-button {
   padding: 16px 180px;
-display: block;
-margin: 0 auto 55px auto;
+  display: block;
+  margin: 0 auto 55px auto;
 }
 
 /* Footer */

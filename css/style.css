@@ -115,17 +115,15 @@ button:active * {
 
 /* Site navigation */
 .main-navigation {
-  display: grid;
   font-weight: bold;
   position: relative;
-
 }
 
 .site-navigation {
   list-style: none;
-  width: 100%;
   display: flex;
   padding: 15px 72px;
+  justify-content: center;
 }
 
 .main-header-logo {
@@ -145,6 +143,8 @@ button:active * {
 
 .site-navigation li {
   width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 .site-navigation li:nth-child(2) {
@@ -503,7 +503,7 @@ button:active * {
 
 .filter-form {
   display: grid;
-  padding: 26px 0 32px;
+  padding: 26px 73px 32px;
   grid-template-columns: 255px 479px auto;
   margin: 0;
 }
@@ -612,11 +612,6 @@ button:active * {
 
 .search {
   padding: 0 73px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: inherit;
-
 }
 
 .search-sorting {
@@ -706,9 +701,8 @@ button:active * {
 
 .searching-results-hotel {
   display: grid;
-  grid-template-columns: 135px 720px 150px;
+  grid-template-columns: 135px 720px auto;
   grid-gap: 29px;
-  width: inherit;
   margin: 0;
   padding: 0;
 }

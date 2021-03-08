@@ -370,6 +370,16 @@ button:active * {
   position: absolute;
   background-color: var(--basic-white);
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  outline: 5px solid #ff0000;
+  margin: 0 auto
+}
+
+.modal-appointment-form label{
+display: block;
+outline: 5px solid #ff0000;
 }
 
 .modal-appointment-form-parametrs {
@@ -381,6 +391,7 @@ button:active * {
   position: relative;
   align-items: center;
   padding-bottom: 41px;
+  outline: 5px solid #ff0000;
 }
 
 .modal-appointment-item-date {
@@ -523,6 +534,46 @@ button:active * {
   text-transform: uppercase;
   color: var(--basic-white);
   padding-top: 25px;
+}
+
+.filter-parameter label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-white);
+}
+
+.filter-input-checkbox:disabled + label{
+  color: var(--basic-white);
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--basic-white);
+  border-radius: 5px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -42px;
+  right: 16%;
+  top: 0px;
+  bottom: 21.31%; 
+  background-image:url(../img/checkbox-checked.svg);
+  border:rgba(0, 1, 1, 0.3);
+ background-repeat:no-repeat;
+  
 }
 
 .filter-price {

@@ -40,7 +40,7 @@ ul {
   margin: 0;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
@@ -374,12 +374,14 @@ button:active * {
   flex-wrap: wrap;
   justify-content: space-between;
   outline: 5px solid #ff0000;
-  margin: 0 auto
+
 }
 
-.modal-appointment-form label{
-display: block;
-outline: 5px solid #ff0000;
+.modal-appointment-form label {
+  display: block;
+  outline: 5px solid #ff0000;
+  margin-right: 22px;
+  width: fit-content;
 }
 
 .modal-appointment-form-parametrs {
@@ -387,10 +389,11 @@ outline: 5px solid #ff0000;
 }
 
 .modal-appointment-item {
+  width: auto;
   font-weight: bold;
   position: relative;
+  display: flex;
   align-items: center;
-  padding-bottom: 41px;
   outline: 5px solid #ff0000;
 }
 
@@ -398,8 +401,8 @@ outline: 5px solid #ff0000;
   background-color: var(--basic-light-dark);
   color: var(--basic-black);
   font-weight: bold;
-  padding: 6px 210px 6px 12px;
   border: none;
+  width: 346px;
 }
 
 .modal-submit-button {
@@ -517,6 +520,8 @@ outline: 5px solid #ff0000;
   padding: 26px 73px 32px;
   grid-template-columns: 255px 479px auto;
   margin: 0;
+  width: 1000px;
+  box-sizing: border-box;
 }
 
 .filter-header {
@@ -543,43 +548,67 @@ outline: 5px solid #ff0000;
   user-select: none;
 }
 
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
+.filter-input-checkbox:hover+label,
+.filter-input-checkbox:focus+label {
   color: var(--basic-white);
 }
 
-.filter-input-checkbox:disabled + label{
+.filter-input-checkbox:disabled+label {
   color: var(--basic-white);
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   left: -42px;
   top: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--basic-white);
-  border-radius: 5px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-unchecked.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  right: 16%;
-  top: 0px;
-  bottom: 21.31%; 
-  background-image:url(../img/checkbox-checked.svg);
-  border:rgba(0, 1, 1, 0.3);
- background-repeat:no-repeat;
-  
+  background-image: url(../img/checkbox-checked.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.filter-price {
-  width: 49%;
-  display: inline-block;
-  box-sizing: border-box;
+.filter-price{
+  height: 36px;
+  width: 314px;
+  font-size: 0;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  position: relative;
+}
+
+.filter-price::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  background: var(--basic-white);
+}
+
+.filter-price-form {
+  font-size: 14px;
+  line-height: 32px;
+  background: none;
+  border: none;
+}
+
+.filter-price-form::placeholder {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  font-weight: normal;
 }
 
 .wrapper {
@@ -618,7 +647,7 @@ outline: 5px solid #ff0000;
   width: 20px;
   border: none;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--basic-white);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   transition: all 0.25s ease;
 }
@@ -634,7 +663,8 @@ outline: 5px solid #ff0000;
 
 .range__button:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.2);
+  background-color: var(--basic-white);
 }
 
 .range__button--right {

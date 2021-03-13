@@ -315,6 +315,12 @@ button:active * {
 }
 
 /* Appointment */
+.appointment {
+  position: relative;
+  padding-bottom: 36px;
+}
+
+
 .appointment-question {
   font-weight: bold;
   font-size: 30px;
@@ -332,13 +338,7 @@ button:active * {
   padding-bottom: 44px;
 }
 
-.modal-appointment {
-  margin: 0 auto;
-  position: relative;
-  width: 568px;
-}
-
-.modal-button {
+.appointment-search-button {
   width: 568px;
   height: 86px;
   background: var(--basic-dark);
@@ -353,62 +353,149 @@ button:active * {
   text-decoration: none;
 }
 
-.modal-button:hover {
+.appointment-search-button:hover {
   background-color: var(--basic-dark-hover);
 }
 
-.modal-button:active {
+.appointment-search-button:active {
   background-color: var(--basic-dark-active);
 }
 
-.modal-button:active * {
+.appointment-search-button:active * {
   opacity: 0.3;
 }
 
-.modal-appointment-form {
+.modal-appointment {
+  margin: 0 auto;
   width: 568px;
-  position: absolute;
-  background-color: var(--basic-white);
+  padding: 55px;
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  outline: 5px solid #ff0000;
-
-}
-
-.modal-appointment-form label {
-  display: block;
-  outline: 5px solid #ff0000;
-  margin-right: 22px;
-  width: fit-content;
-}
-
-.modal-appointment-form-parametrs {
-  padding: 60px 55px;
-}
-
-.modal-appointment-item {
-  width: auto;
+  background-color: var(--basic-white);
+  font-style: normal;
   font-weight: bold;
-  position: relative;
+  font-size: 14px;
+  line-height: 26px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+
+.modal-appointment-form {
   display: flex;
+  flex-direction: column;
+}
+
+.modal-appointment-grid {
+  display: grid;
+  grid: repeat(3, 38px) / repeat(4, 115px);
+  grid-row-gap: 30px;
   align-items: center;
-  outline: 5px solid #ff0000;
+  margin-bottom: 55px;
+}
+
+.modal-appointment-grid [value] {
+  font-weight: bold;
 }
 
 .modal-appointment-item-date {
-  background-color: var(--basic-light-dark);
-  color: var(--basic-black);
-  font-weight: bold;
-  border: none;
+  grid-column: 2/5;
+  display: flex;
   width: 346px;
+  background-color: var(--basic-light-dark);
+}
+
+.modal-appointment-date-input {
+  background-color: var(--basic-light-dark);
+  border: none;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  height: 26px;
+  width: 316px;
+}
+
+.modal-appointment-item-children {
+  margin-left: 53px;
+}
+
+.modal-people-input {
+  text-align: center;
+  background-color: var(--basic-light-dark);
+  border: none;
+  text-transform: uppercase;
+  width: 38px;
+}
+
+.people-quantity {
+  background-color: var(--basic-light-dark);
+  display: flex;
+  justify-content: space-between;
+  width: 114px;
+  height: 38px;
+}
+
+.people-quantity:hover {
+  background-color: #EBEBEB;
+  border-color: #EBEBEB;
+}
+
+.modal-appointment-date:hover {
+  background-color: #EBEBEB;
+  outline: #EBEBEB;
+}
+
+.modal-appointment-date:focus {
+  background-color: var(--basic-white);
+  outline: 2px #E5E5E5;
+}
+
+.modal-appointment-date-input:focus {
+  background-color: var(--basic-white);
+  outline: none;
+}
+
+.people-quantity-button {
+  background-color: var(--basic-light-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+}
+
+.modal-icon-button {
+  background-color: var(--basic-light-dark);
+}
+
+.modal-appoitment-image {
+  width: 21px;
+  height: 23px;
+  fill: #A9A9A9;
+}
+
+.modal-appoitment-quantity-image {
+  width: 11px;
+  height: 11px;
+}
+
+.modal-icon-button:hover {
+  background-color: var(--basic-light-dark);
+}
+
+.modal-appoitment-image:hover {
+  fill: var(--basic-black);
+}
+
+.modal-icon-button:focus {
+  background-color: var(--basic-light-dark);
+}
+
+.modal-appoitment-image:focus {
+  fill: var(--basic-neutral);
 }
 
 .modal-submit-button {
   padding: 16px 180px;
   display: block;
-  margin: 0 auto 55px auto;
 }
 
 /* Footer */
@@ -577,7 +664,7 @@ button:active * {
   background-size: contain;
 }
 
-.filter-price{
+.filter-price {
   height: 36px;
   width: 314px;
   font-size: 0;
@@ -586,7 +673,7 @@ button:active * {
   position: relative;
 }
 
-.filter-price::after{
+.filter-price::after {
   content: "";
   position: absolute;
   top: 50%;

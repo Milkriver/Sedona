@@ -55,11 +55,11 @@
     <section class="welcome-card">
       <h2 class="visually-hidden">Приветствие</h2>
       <img class="welcome-description" src="img/welcome.svg" width="457" height="351"
-        alt=" Welcome - to the gorgeous - Sedona Because the Grand Canyon sucks!">
+        alt="welcome">
     </section>
     <section class="features-header">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="welcome-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="welcome-text">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
       <p class="features">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
     <ul class="features-list">
@@ -127,7 +127,7 @@
       <p class="appointment-question">Заинтересовались?</p>
       <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
         предложения гостиниц в Седоне</p>
-      <a class="button appointment-search-button" href="blank.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      <button class="button appointment-search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       <div class="modal-appointment">
         <form class="modal-appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="modal-appointment-grid">
@@ -150,29 +150,29 @@
               </button>
             </div>
             <label for="adults">Взрослые</label>
-            <div class="people-quantity">
-              <button class="people-quantity-button">
-                <svg class="modal-appoitment-image  modal-appoitment-quantity-image">
+            <div class="people-quantity-form">
+              <button type="button" class="people-quantity-button">
+                <svg class="modal-appoitment-image people-quantity-image">
                   <use xlink:href="#minus"></use>
                 </svg>
               </button>
-              <input class="modal-people-input" id="adults" type="text" name="adults" value="2">
-              <button class="people-quantity-button">
-                <svg class="modal-appoitment-image  modal-appoitment-quantity-image">
+              <input class="modal-input-people" id="adults" type="text" name="adults" value="2">
+              <button type="button" class="people-quantity-button">
+                <svg class="modal-appoitment-image people-quantity-image">
                   <use xlink:href="#plus"></use>
                 </svg>
               </button>
             </div>
-            <label class="modal-appointment-item-children" for="children">Дети</label>
-            <div class="people-quantity">
-              <button class="people-quantity-button">
-                <svg class="modal-appoitment-image  modal-appoitment-quantity-image">
+            <label class="label-children" for="children">Дети</label>
+            <div class="people-quantity-form">
+              <button type="button" class="people-quantity-button">
+                <svg class="modal-appoitment-image people-quantity-image">
                   <use xlink:href="#minus"></use>
                 </svg>
               </button>
-              <input class="modal-people-input" id="children" type="text" name="children" value="0">
-              <button class="people-quantity-button">
-                <svg class="modal-appoitment-image modal-appoitment-quantity-image">
+              <input class="modal-input-people" id="children" type="text" name="children" value="0">
+              <button type="button" class="people-quantity-button">
+                <svg class="modal-appoitment-image people-quantity-image">
                   <use xlink:href="#plus"></use>
                 </svg>
               </button>
@@ -182,9 +182,9 @@
         </form>
       </div>
     </section>
-    <a href="#">
-      <img src="img/map.jpg" width="1199" height="594" alt="Карта города Седона">
-    </a>
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1615745231361!5m2!1sru!2sru"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </main>
   <footer class="main-footer">
     <section class="footer-contacts">
@@ -218,6 +218,7 @@
         </svg></a>
     </section>
   </footer>
+  <script src="/js/form.js"></script>
 </body>
 
 </html>

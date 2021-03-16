@@ -45,9 +45,9 @@
     <section class="filter">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="filter-header-infrastructure">
           <legend class="filter-header">Инфраструктура:</legend>
-          <ul>
+          <ul class="filter-parameter-list">
             <li class="filter-parameter">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="swimmingpool" id="filter-swimmingpool" checked>
               <label for="filter-swimmingpool">Бассейн</label>
@@ -62,9 +62,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-header-typeofapartment">
           <legend class="filter-header">Тип жилья:</legend>
-          <ul>
+          <ul class="filter-parameter-list">
             <li class="filter-parameter">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
@@ -79,7 +79,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-header-price">
           <legend class="filter-header">Стоимость в сутки (Р):</legend>
           <div class="filter-price">
           <input class="filter-price-form" type="text" name="minprice" id="minprice" placeholder="От 0">

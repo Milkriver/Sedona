@@ -35,24 +35,6 @@ img {
   height: auto;
 }
 
-ul {
-  padding-left: 0;
-  margin: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-fieldset {
-  border: 0;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -122,7 +104,8 @@ button:active * {
 .site-navigation {
   list-style: none;
   display: flex;
-  padding: 15px 72px;
+  padding-left: 0;
+  margin: 0;
   justify-content: center;
 }
 
@@ -144,11 +127,15 @@ button:active * {
 .site-navigation li {
   width: 25%;
   display: flex;
+  list-style-type: none;
+  padding-top: 15px;
 }
 
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
   justify-content: flex-start;
+  
+  padding-left: 72px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -158,6 +145,7 @@ button:active * {
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
   justify-content: flex-end;
+  padding-right: 72px;
 }
 
 .site-navigation a {
@@ -183,6 +171,7 @@ button:active * {
   position: relative;
   height: 509px;
   background-image: url("../img/index_background_photo.jpg");
+background-repeat: no-repeat;
 }
 
 .welcome-card:after {
@@ -220,6 +209,12 @@ button:active * {
   font-weight: normal;
   text-align: center;
   margin-bottom: 51px;
+  }
+
+.features-list{
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .feature-item {
@@ -255,9 +250,7 @@ button:active * {
   font-weight: normal;
   line-height: 21px;
   text-align: center;
-  padding: 23px 51px 54px;
-  padding-left: 51px;
-  padding-right: 51px;
+  padding: 23px 51px 51px;
 }
 
 .feature-illustration {
@@ -269,6 +262,8 @@ button:active * {
   height: 330px;
   display: flex;
   justify-content: space-around;
+  padding-left: 0;
+  margin: 0;
 }
 
 .feature-icon {
@@ -318,6 +313,7 @@ button:active * {
 
 .next-features {
   display: flex;
+  padding-left: 0;
   margin: 0;
   background-color: var(--basic-extra-light);
 }
@@ -573,6 +569,8 @@ button:active * {
 
 .social-button-list {
   display: flex;
+  padding-left: 0;
+  margin: 0;
 }
 
 .social-button-list>li {
@@ -647,12 +645,18 @@ button:active * {
   background-size: cover;
 }
 
+.filter-header-infrastructure,
+.filter-header-typeofapartment,
+.filter-header-price {
+  border: 0;
+} 
+
 .filter-form {
   display: grid;
-  padding: 26px 73px 32px;
+  /* padding: 26px 73px 32px; */
   grid-template-columns: 255px 479px auto;
   margin: 0;
-  width: 1000px;
+  /* width: 1000px; */
   box-sizing: border-box;
 }
 
@@ -664,6 +668,11 @@ button:active * {
   color: var(--basic-white);
 }
 
+.filter-parameter-list{
+  padding-left: 0;
+  margin: 0;
+}
+
 .filter-parameter {
   font-weight: normal;
   font-size: 14px;
@@ -671,6 +680,7 @@ button:active * {
   text-transform: uppercase;
   color: var(--basic-white);
   padding-top: 25px;
+  list-style-type: none;
 }
 
 .filter-parameter label {
@@ -920,6 +930,8 @@ button:active * {
 .searching-results {
   display: grid;
   width: inherit;
+  padding-left: 0;
+  margin: 0;
 }
 
 .searching-results-hotel {

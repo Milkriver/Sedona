@@ -1007,3 +1007,12 @@ img {
 .button-searching-booking {
   background-color: var(--basic-dark);
 }
+
+.button-searching-booking:hover {
+  background-color: var(--basic-dark-hover);
+}
+
+.button-searching-booking:active {
+  background-color: var(--basic-dark-active);
+  color: var(--basic-white);
+}

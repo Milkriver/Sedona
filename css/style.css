@@ -54,30 +54,6 @@ img {
   height: 56px;
 }
 
-button {
-  background: var(--basic-neutral);
-  border: var(--basic-neutral);
-  color: var(--basic-white);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-button:hover {
-  background-color: var(--basic-neutral-hover);
-}
-
-button:active {
-  background-color: var(--basic-neutral-active);
-  outline: none;
-}
-
-button:active * {
-  opacity: 0.3;
-}
-
 .button {
   background: var(--basic-neutral);
   border: var(--basic-neutral);
@@ -87,6 +63,20 @@ button:active * {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: var(--basic-neutral-hover);
+}
+
+.button:active {
+  background-color: var(--basic-neutral-active);
+  outline: none;
+}
+
+.button:active * {
+  opacity: 0.3;
 }
 
 .page-body {

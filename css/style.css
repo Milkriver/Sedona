@@ -68,7 +68,7 @@ img {
 
 .button:hover {
   background-color: var(--basic-neutral-hover);
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .button:active {
@@ -373,16 +373,18 @@ img {
 }
 
 .animated {
-  animation: show 3s;
+  animation: show 0.2s;
 }
 
 @keyframes show {
-  from {
-    opacity: 0;
+  0% {
+    -webkit-transform: translateY(-86px);
+    transform: translateY(-86px)
   }
 
-  to {
-    opacity: 1;
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
   }
 }
 

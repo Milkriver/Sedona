@@ -68,6 +68,7 @@ img {
 
 .button:hover {
   background-color: var(--basic-neutral-hover);
+  cursor: pointer; 
 }
 
 .button:active {
@@ -453,6 +454,7 @@ img {
 
 .modal-icon-button:hover {
   background-color: var(--basic-light-dark);
+  cursor: pointer;
 }
 
 .modal-icon-button:focus {

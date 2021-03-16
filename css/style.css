@@ -64,7 +64,7 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   outline: none;
-  }
+}
 
 .button:hover {
   background-color: var(--basic-neutral-hover);
@@ -124,7 +124,7 @@ img {
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
   justify-content: flex-start;
-  
+
   padding-left: 72px;
 }
 
@@ -161,7 +161,7 @@ img {
   position: relative;
   height: 509px;
   background-image: url("../img/index_background_photo.jpg");
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .welcome-card:after {
@@ -199,9 +199,9 @@ background-repeat: no-repeat;
   font-weight: normal;
   text-align: center;
   margin-bottom: 51px;
-  }
+}
 
-.features-list{
+.features-list {
   padding-left: 0;
   margin: 0;
   list-style-type: none;
@@ -244,8 +244,8 @@ background-repeat: no-repeat;
 }
 
 .feature-illustration {
- width: 800px;
-  height: 256px; 
+  width: 800px;
+  height: 256px;
 }
 
 .feature-recommend {
@@ -312,7 +312,7 @@ background-repeat: no-repeat;
 /* Appointment-information */
 .appointment {
   position: relative;
- }
+}
 
 .appointment-question {
   font-weight: bold;
@@ -580,19 +580,19 @@ background-repeat: no-repeat;
 }
 
 .social-button-twitter {
-  background-image: url(../img/twitter.svg);
+  background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-button-facebook {
-  background-image: url(../img/facebook.svg);
+  background-image: url("../img/facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-button-youtube {
-  background-image: url(../img/youtube.svg);
+  background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -639,7 +639,7 @@ background-repeat: no-repeat;
 .filter-header-typeofapartment,
 .filter-header-price {
   border: 0;
-} 
+}
 
 .filter-form {
   display: grid;
@@ -658,7 +658,7 @@ background-repeat: no-repeat;
   color: var(--basic-white);
 }
 
-.filter-parameter-list{
+.filter-parameter-list {
   padding-left: 0;
   margin: 0;
 }
@@ -696,7 +696,7 @@ background-repeat: no-repeat;
   top: 0;
   width: 27px;
   height: 23px;
-  background-image: url(../img/checkbox-unchecked.svg);
+  background-image: url("../img/checkbox-unchecked.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -704,7 +704,7 @@ background-repeat: no-repeat;
 .filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  background-image: url(../img/checkbox-checked.svg);
+  background-image: url("../img/checkbox-checked.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }

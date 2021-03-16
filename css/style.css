@@ -189,7 +189,9 @@ img {
 .features {
   font-weight: normal;
   text-align: center;
- }
+  margin: 0;
+  padding-bottom: 51px;
+}
 
 .features-list {
   padding-left: 0;
@@ -213,7 +215,7 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  padding: 47px 139px 0px;
+  padding: 47px 122px 0px;
   margin: 0;
   text-align: center;
 }
@@ -221,7 +223,7 @@ img {
 .feature-item-number {
   font-weight: normal;
   line-height: 21px;
-  padding: 25px 174px 0px;
+  padding: 28px 174px 0px;
   text-align: center;
   margin: 0;
 }
@@ -230,7 +232,7 @@ img {
   font-weight: normal;
   line-height: 21px;
   text-align: center;
-  padding: 23px 51px 51px;
+  padding: 8px 40px 50px;
 }
 
 .feature-illustration {
@@ -241,38 +243,53 @@ img {
 .feature-recommend {
   min-height: 330px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding-left: 0;
   margin: 0;
 }
 
 .feature-icon {
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  box-sizing: border-box;
 }
 
 .feature-recommend-item-name {
-  padding-top: 160px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  padding: 160px 90px 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.feature-recommend-item-text {
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  padding: 13px 50px 50px;
 }
 
 .feature-icon-home {
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
-  background-position: center 20%;
+  background-position: center 23%;
+
 }
 
 .feature-icon-food {
   background-image: url("../img/icon-food.svg");
   background-repeat: no-repeat;
-  background-position: center 20%;
+  background-position: center 23%;
 }
 
 .feature-icon-gifts {
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
-  background-position: center 20%;
+  background-position: center 23%;
 }
 
 .feature-icon img {
@@ -293,6 +310,7 @@ img {
 
 .next-features {
   display: flex;
+  width: 400px;
   padding-left: 0;
   margin: 0;
   background-color: var(--basic-extra-light);
@@ -309,16 +327,17 @@ img {
   font-size: 30px;
   line-height: 24px;
   text-align: center;
-  padding-top: 58px;
+  padding: 57px 0 0 446px;
   margin: 0;
+  width: 297px;
 }
 
 .appointment-info {
   font-weight: normal;
   line-height: 24px;
   text-align: center;
-  padding-top: 35px;
-  padding-bottom: 44px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 /* Appointment-search-button */
@@ -397,8 +416,9 @@ img {
 /* Appointment-form with search-parameters: all icons */
 .modal-appoitment-image {
   width: 21px;
-  min-height: 23px;
+  height: 23px;
   fill: #A9A9A9;
+  /* padding-right: 4px; */
 }
 
 .modal-appoitment-image:hover {
@@ -416,12 +436,13 @@ img {
   width: 346px;
   background-color: var(--basic-light-dark);
   position: relative;
+  height: 38px;
 }
 
 .modal-appointment-date-input {
   background-color: var(--basic-light-dark);
   border: none;
-  padding: 6px 12px;
+  padding: 0px 10px;
   text-transform: uppercase;
   height: 100%;
   width: 100%;
@@ -440,7 +461,8 @@ img {
 .modal-icon-button {
   background-color: transparent;
   position: absolute;
-  right: 0;
+  right: 5px;
+  top: 5px;
 }
 
 .modal-icon-button:hover {
@@ -462,7 +484,8 @@ img {
   background-color: transparent;
   border: none;
   text-transform: uppercase;
-  width: 38px;
+  width: 35px;
+  padding: 0;
 }
 
 .modal-input-people:active {
@@ -493,7 +516,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 13px;
+  padding: 10px 14px;
 }
 
 .people-quantity-button:hover {
@@ -524,21 +547,26 @@ img {
 
 /* Footer */
 .main-footer {
-  display: flex;
+  display: grid;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  padding: 36px 0;
+  grid-template-columns: 525px 150px 525px;
+  padding-bottom: 36px;
 }
 
 .footer-contacts {
   font-weight: bold;
   font-size: 21px;
   text-align: center;
+  padding-right: 50px;
 }
 
 .footer-contacts p {
   margin: 0;
+}
+
+.footer-hashtag {
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .footer-phone {
@@ -546,8 +574,11 @@ img {
   text-decoration: none;
 }
 
-.footer-hashtag {
-  padding-bottom: 9px;
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 28px;
 }
 
 .social-button-list {
@@ -604,8 +635,14 @@ img {
 }
 
 .footer-copyright {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
   display: flex;
   align-items: center;
+  padding-top: 30px;
+  padding-left: 190px;
 }
 
 .footer-logo-html-academy {

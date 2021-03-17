@@ -43,6 +43,7 @@ img {
   height: 1px;
   width: 1px;
   overflow: hidden;
+  margin: 0;
 }
 
 /* Grid */
@@ -476,14 +477,13 @@ img {
 
 /* Appointment-form with search-parameters: people */
 .label-children {
-  margin-left: 53px;
+  margin-left: 49px;
 }
 
 .modal-input-people {
   text-align: center;
   background-color: transparent;
   border: none;
-  text-transform: uppercase;
   width: 35px;
   padding: 0;
 }
@@ -494,9 +494,8 @@ img {
 
 .people-quantity-form {
   background-color: var(--basic-light-dark);
-  display: flex;
-  justify-content: space-between;
-  width: 114px;
+  display: grid;
+  grid-template-columns: 37px 37px 37px;
   min-height: 38px;
 }
 
@@ -516,7 +515,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 14px;
+  padding: 10px 10px;
 }
 
 .people-quantity-button:hover {
@@ -673,11 +672,17 @@ img {
 
 .filter-form {
   display: grid;
-  /* padding: 26px 73px 32px; */
+  padding: 26px 70px 16px;
   grid-template-columns: 255px 479px auto;
   margin: 0;
-  /* width: 1000px; */
   box-sizing: border-box;
+}
+
+.filter-header-infrastructure,
+.filter-header-typeofapartment
+{
+  padding: 0;
+
 }
 
 .filter-header {
@@ -701,6 +706,7 @@ img {
   color: var(--basic-white);
   padding-top: 25px;
   list-style-type: none;
+  padding-left: 40px;
 }
 
 .filter-parameter label {
@@ -894,10 +900,12 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin: 0;
+  padding-top: 0;
   mix-blend-mode: normal;
   opacity: 0.3;
   background-color: transparent;
-  min-height: 18px;
+  height: 18px;
   text-decoration: underline;
   text-decoration-style: dashed;
   text-decoration-color: var(--basic-neutral);

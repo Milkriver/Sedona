@@ -1,16 +1,24 @@
 :root {
   --basic-black: #000000;
+  --basic-black--rgb: 0, 1, 1;
   --basic-extra-dark: #333333;
   --basic-dark: #766357;
   --basic-dark-hover: #604E43;
   --basic-dark-active: #503E33;
+  --basic-dark-grey:#666666;
   --basic-light-dark: #F2F2F2;
+  --basic-shadow: #ABABAB;
   --basic-neutral: #81B3D2;
+  --basic-grey:#A9A9A9;
   --basic-neutral-hover: #669EC0;
   --basic-neutral-active: #5496BD;
   --basic-light-active: #BDBBBC;
   --basic-extra-light: #EEEEEE;
+  --basic-light: #EBEBEB;
+  --basic-light-border:#E5E5E5;
+  --basic-light-grey:#CACACA;
   --basic-white: #ffffff;
+  --basic-white--rgb: 255, 255, 255;
 }
 
 body {
@@ -80,7 +88,7 @@ img {
 .page-body {
   width: 1200px;
   background: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px rgba(var(--basic-black--rgb), 0.2);
 }
 
 /* Site navigation */
@@ -414,8 +422,7 @@ img {
 .modal-appoitment-image {
   width: 21px;
   height: 23px;
-  fill: #A9A9A9;
-  /* padding-right: 4px; */
+  fill: var(--basic-grey);
 }
 
 .modal-appoitment-image:hover {
@@ -446,13 +453,13 @@ img {
 }
 
 .modal-appointment-date-input:hover {
-  background-color: #EBEBEB;
-  outline: 2px solid #EBEBEB;
+  background-color: var(--basic-light);
+  outline: 2px solid var(--basic-light);
 }
 
 .modal-appointment-date-input:focus {
   background-color: var(--basic-white);
-  outline: 2px solid #E5E5E5;
+  outline: 2px solid var(--basic-light-border);
 }
 
 .modal-icon-button {
@@ -496,13 +503,13 @@ img {
 }
 
 .people-quantity-form:hover {
-  background-color: #EBEBEB;
-  border-color: #EBEBEB;
+  background-color: var(--basic-light);
+  border-color: var(--basic-light);
 }
 
 .people-quantity-form:active {
   background: var(--basic-white);
-  outline: 2px solid #E5E5E5;
+  outline: 2px solid var(--basic-light-border);
   box-sizing: border-box;
 }
 
@@ -567,7 +574,7 @@ img {
 }
 
 .footer-phone {
-  color: #000000;
+  color: var(--basic-black);
   text-decoration: none;
 }
 
@@ -791,7 +798,7 @@ img {
 
 .range__bar {
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(var(--basic-white--rgb), 0.3);
 }
 
 .range__bar-inner {
@@ -817,7 +824,7 @@ img {
   border: none;
   border-radius: 50%;
   background-color: var(--basic-white);
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(var(--basic-black--rgb), 0.2);
   transition: all 0.25s ease;
 }
 
@@ -826,7 +833,7 @@ img {
   width: 4px;
   height: 4px;
   display: block;
-  background-color: #ababab;
+  background-color: var(--basic-shadow);
   border-radius: 50%;
 }
 
@@ -842,7 +849,7 @@ img {
 
 .filter-button {
   padding: 7px 33px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
   font-weight: normal;
@@ -863,7 +870,7 @@ img {
 .search-sorting {
   display: grid;
   grid-template-columns: 135px 780px auto;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid var(--basic-light-border);
   padding: 0 73px 10px;
 }
 
@@ -972,7 +979,7 @@ img {
 
 .sorting-direction-inverted {
   transform: rotate(180deg);
-  fill: #cacaca;
+  fill: var(--basic-light-grey);
 }
 
 .sorting-direction-inverted:hover {
@@ -999,7 +1006,7 @@ img {
   gap: 29px;
   margin: 0;
   padding: 0 73px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid var(--basic-light-border);
 }
 
 .hotel-image {
@@ -1037,6 +1044,7 @@ img {
 
 .hotel-name a {
   text-decoration: none;
+  color: inherit;
 }
 
 .hotel-about {
@@ -1094,7 +1102,7 @@ img {
   background-color: var(--basic-light-dark);
   font-size: 14px;
   line-height: 21px;
-  color: #666666;
+  color: var(--basic-dark-grey);
   display: flex;
   justify-content: center;
   align-items: center;

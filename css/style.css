@@ -5,18 +5,18 @@
   --basic-dark: #766357;
   --basic-dark-hover: #604E43;
   --basic-dark-active: #503E33;
-  --basic-dark-grey:#666666;
+  --basic-dark-grey: #666666;
   --basic-light-dark: #F2F2F2;
   --basic-shadow: #ABABAB;
   --basic-neutral: #81B3D2;
-  --basic-grey:#A9A9A9;
+  --basic-grey: #A9A9A9;
   --basic-neutral-hover: #669EC0;
   --basic-neutral-active: #5496BD;
   --basic-light-active: #BDBBBC;
   --basic-extra-light: #EEEEEE;
   --basic-light: #EBEBEB;
-  --basic-light-border:#E5E5E5;
-  --basic-light-grey:#CACACA;
+  --basic-light-border: #E5E5E5;
+  --basic-light-grey: #CACACA;
   --basic-white: #ffffff;
   --basic-white--rgb: 255, 255, 255;
 }
